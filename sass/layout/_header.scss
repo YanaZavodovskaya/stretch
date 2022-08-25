@@ -1,0 +1,29 @@
+
+
+@media screen and (min-width: 768px) {
+.header {
+    background-color: hsl(0, 0%, 43%, 75%);
+} 
+
+.header__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .logo__link {
+        @include font(34px, 18px, 700);
+        font-family: var(--logo-font-family);
+        color: #252422;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: inline-block;
+
+
+    }
+
+    .logo__link--span {
+        color: var(--accent-text-color);
+    }
+}

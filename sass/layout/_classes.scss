@@ -1,0 +1,32 @@
+.classes__container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.classes__course-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 65px;
+    padding-right: 65px;
+    &:not(:last-child) {
+            margin-bottom: 70px;
+        }
+
+}
+
+.classes__course-text-container {
+    width: 530px;
+}
+
+.section-subtitle {
+    @include font(24px, 29px, 700);
+    color: #000000;
+}
+
+.classes__course-subtitle {
+    display: block;
+    margin-bottom: 50px;
+}
+

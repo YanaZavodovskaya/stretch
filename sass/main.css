@@ -1,0 +1,233 @@
+:root {
+  --primary-font-family: "Montserrat", sans-serif;
+  --logo-font-family: "Russo One", sans-serif;
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #E63946;
+  --accent-bg-color: #2f303a;
+  --icon-fill: #afb1b8;
+  --primary-cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: #ffffff;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid rgb(83, 71, 255);
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    background-color: hsla(0deg, 0%, 43%, 0.75);
+  }
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo__link {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 0.5294117647;
+    font-family: var(--logo-font-family);
+    color: #252422;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: inline-block;
+  }
+  .logo__link--span {
+    color: var(--accent-text-color);
+  }
+}
+.site-nav__list {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    align-items: center;
+  }
+  .site-nav__list {
+    display: flex;
+    align-items: center;
+  }
+  .site-nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .site-nav__link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2222222222;
+    color: var(--title-text-color);
+  }
+  .site-nav__link:hover, .site-nav__link:focus {
+    color: var(--accent-text-color);
+  }
+}
+.hero {
+  background-color: var(--accent-bg-color);
+  justify-content: center;
+  background-image: linear-gradient(180deg, #838383 0%, rgba(0, 0, 0, 0) 100%), url("../images/hero-img.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 741px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.about__container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 210px;
+  padding-left: 210px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.21875;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+  margin-bottom: 70px;
+  display: block;
+}
+
+.about__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2222222222;
+}
+.about__text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.classes__container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.classes__course-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 65px;
+  padding-right: 65px;
+}
+.classes__course-container:not(:last-child) {
+  margin-bottom: 70px;
+}
+
+.classes__course-text-container {
+  width: 530px;
+}
+
+.section-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2083333333;
+  color: #000000;
+}
+
+.classes__course-subtitle {
+  display: block;
+  margin-bottom: 50px;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,31 @@
+.section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.about__container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 210px;
+    padding-left: 210px;
+    
+}
+
+.section-title {
+    @include font(32px, 39px, 700);
+    text-transform: uppercase;
+    color: var(--accent-text-color);
+    margin-bottom: 70px;
+    display: block;
+}
+
+.about__text {
+    @include font(18px, 22px);
+    
+
+    &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+}
