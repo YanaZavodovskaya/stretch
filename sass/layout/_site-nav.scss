@@ -5,6 +5,7 @@
 @media screen and (min-width: 768px) {
     .site-nav {
         align-items: center;
+        margin-left: auto;
     }
 
     .site-nav__list {
@@ -19,6 +20,11 @@
     .site-nav__link {        
         @include font(18px, 22px, 700);
         color: var(--title-text-color);
+        display: block;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        transition: color 250ms var(--primary-cubic-bezier);
 
         &:hover,
         &:focus {

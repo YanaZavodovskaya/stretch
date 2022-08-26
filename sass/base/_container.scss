@@ -21,10 +21,30 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
     .container {
-        width: 1200px;
+        width: 1024px;
         padding-left: 40px;
         padding-right: 40px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1280px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .container {
+        width: 1600px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .container {
+        width: 1920px;
     }
 }
