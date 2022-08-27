@@ -1,9 +1,13 @@
 
 
 @media screen and (min-width: 768px) {
-    .header {        
-        background-color: #A5A19F;
-        border-bottom: 1px solid #000;
+    .header {  
+        position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        // background-color: #A5A19F;
+        // border-bottom: 1px solid #000;
         // position: absolute;
     } 
 

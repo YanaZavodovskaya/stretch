@@ -125,8 +125,10 @@ a {
 }
 @media screen and (min-width: 768px) {
   .header {
-    background-color: #A5A19F;
-    border-bottom: 1px solid #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
   .header__container {
     display: flex;
@@ -180,17 +182,20 @@ a {
   justify-content: center;
   text-align: center;
   align-items: center;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero-img-2.jpg");
+}
+
+.hero__container {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero-img-2-1.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  height: 790px;
 }
 
 .hero__text-container {
   display: flex;
   text-align: center;
   padding-top: 327px;
+  padding-bottom: 327px;
 }
 
 .hero__title {
@@ -251,6 +256,14 @@ a {
   color: #D9D9D9;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero__text-container {
+    display: flex;
+    text-align: center;
+    padding-top: 627px;
+    padding-bottom: 627px;
+  }
+}
 .quolities__list {
   display: flex;
   justify-content: space-between;
