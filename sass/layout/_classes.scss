@@ -23,6 +23,7 @@
 .section-subtitle {
     @include font(24px, 29px, 700);
     color: #000000;
+    display: block;
 }
 
 .classes__course-subtitle {

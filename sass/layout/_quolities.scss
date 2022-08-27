@@ -1,86 +1,27 @@
-// .quolities {
-//     padding-top: 60px;
-//     padding-bottom: 60px;
-// }
+.quolities__list {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    text-align: center;
+}
 
+.quolities__item {
+    width: 250px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
-// .quolities__item {
-//     max-width: 450px;
+.quolities__title {
+    @include font(20px, 24px, 700);
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #000000;
+}
 
-//     &:not(:last-child) {
-//         margin-bottom: 30px;
-//     }
-// }
-
-// .quolities-icon {
-//     width: 100%;
-//     height: 120px;
-//     background: #f5f4fa;
-//     border-radius: 4px;
-//     margin-bottom: 30px;
-//     @extend %align;
-// }
-
-// .quolities-icon__svg {
-//     width: 70px;
-//     height: 70px;
-// }
-
-// .quolities__title {
-//     @include font(14px, 16.41px);
-//     text-transform: uppercase;
-//     color: var(--title-text-color);
-
-//     margin-bottom: 10px;
-//     text-align: center;
-// }
-
-// .quolities__desc {
-//     @include font(14px, 24px, 400);
-// }
-
-// @media screen and (min-width: 768px) {
-    
-//     .quolities__list {
-//             display: flex;
-//             flex-wrap: wrap;
-//             justify-content: space-between;
-//             margin: -15px;
-            
-//         }
-
-//     .quolities__title {
-//         text-align: start;
-//     }
-
-//     .quolities__item {
-//         max-width: 354px;
-//         margin: 15px;
-//     }
-
-// }
-
-// @media screen and (min-width: 1200px) {
-//     .quolities {
-//         padding-top: 94px;
-//         padding-bottom: 94px;
-//     }
-
-//     .quolities__list {
-//         flex-wrap: nowrap;
-//         justify-content: center;
-//         margin: 0;
-
-//     }
-
-//     .quolities__item {
-//         min-width: 270px;
-//         margin: 0;
-
-//         &:not(:last-child) {
-//             margin-right: 30px;
-//         }
-//     }
-
-// }
-
+.quolities__text {
+    @include font(18px, 22px);
+    display: block;
+    margin-top: 10px;
+}
