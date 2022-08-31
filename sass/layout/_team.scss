@@ -1,0 +1,58 @@
+.team-container {
+    position: relative;
+    // border: 2px solid red;
+    text-align: center;
+}
+.team__list {
+    display: flex;
+    justify-content: start;
+}
+
+.team__item {
+    background-color: #F5F5F5;
+        box-shadow: 0px 4px 4px 4px rgba(230, 57, 70, 0.5);
+        border-radius: 20px;
+        width: 300px;
+        text-align: center;
+        padding-bottom: 50px;
+        overflow: hidden;
+        &:not(:last-child) {
+                margin-right: 60px;
+            }
+}
+
+.team__img {
+    margin-bottom: 20px;
+}
+
+.team__picture-name {
+    @include font(18px, 22px);
+    margin-bottom: 8px;
+}
+
+.team__picture-prof {
+    @include font(18px, 22px);
+}
+
+.team__list-name {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    @include font(18px, 22px, 700);
+}
+
+.team__list-name-2 {
+        position: absolute;
+        bottom: 20%;
+        left: 0;
+        transform: rotate(-90deg);
+        text-transform: uppercase;
+        @include font(18px, 22px, 700);
+    }
+
+    .team__list--coach {
+        justify-content: end;
+        margin-top: 60px;
+    }

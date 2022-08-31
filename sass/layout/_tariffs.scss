@@ -1,0 +1,98 @@
+.tariffs {
+    text-align: center;
+}
+.tariffs-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.tariffs__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 140px;
+    
+}
+
+.tariffs__item {
+    position: relative;
+    background-color: rgba(245, 245, 245, 0.5);
+    border-radius: 20px;
+    padding-top: 115px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    &:not(:last-child) {
+            margin-right: 75px;
+        }
+}
+
+.tariff__list {
+    text-align: start;
+    @include font(18px, 22px);
+}
+
+.tariff__item {
+    position: relative;
+    &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+    &::before {
+        content: ' ';
+        position: absolute;
+        display: block;
+        left: -10%;
+        top: 30%;
+        // transform: -50% 10%;
+        
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);;
+        animation: pulse-2 1200ms linear 200ms infinite alternate;
+    }
+}
+
+.tariff__btn {
+    width: 150px;
+    height: 45px;
+    border-radius: 20px;
+    background: #FFDEDE;
+    border: 0;
+    margin-top: 50px;
+    transition: background-color 250ms var(--primary-cubic-bezier), color 250ms var(--primary-cubic-bezier);
+    
+        &:hover,
+        &:focus {
+            background-color: var(--accent-text-color);
+            color: #ffffff;
+        }
+
+}
+
+.tariff {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #FFDEDE 0%, rgba(255, 222, 222, 0) 100%);
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.tariff__text {
+    @include font(48px, 59px, 700);
+    color: var(--accent-text-color);
+}
+
+.tariff__text--small {
+    @include font(18px, 22px, 700);
+    display: block;
+    margin-top: 20px;
+}

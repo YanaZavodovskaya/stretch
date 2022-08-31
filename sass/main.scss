@@ -2,6 +2,8 @@
 @import './utils/visually-hidden';
 @import './utils/placeholders';
 @import './utils/mixins';
+@import './utils/keyframes';
+
 
 @import './base/common';
 @import './base/container';
@@ -12,3 +14,5 @@
 @import './layout/quolities';
 @import './layout/about';
 @import './layout/classes';
+@import './layout/tariffs';
+@import './layout/team';
