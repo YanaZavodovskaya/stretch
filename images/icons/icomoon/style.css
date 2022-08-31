@@ -14,3 +14,11 @@ Single-colored icons can be modified like so:
   color: red;
 }
 ========================================== */
+
+.icon-map {
+  width: 0.603515625em;
+}
+
+.icon-mobilephone {
+  width: 0.5146484375em;
+}
