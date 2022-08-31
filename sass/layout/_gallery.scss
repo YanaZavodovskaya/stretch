@@ -1,0 +1,10 @@
+.gallery__picture-wrapper {
+    display: flex;
+    
+}
+
+.gallery__picture {
+&:not(:last-child) {
+        margin-right: 55px;
+    }
+}
