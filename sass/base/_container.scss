@@ -21,7 +21,6 @@
 @media screen and (min-width: 768px) {
     .container {
         width: 768px;
-
     }
 }
 
@@ -41,18 +40,16 @@
     }
 }
 
+// @media screen and (min-width: 1600px) {
+//     .container {
+//         width: 1600px;
+//         padding-left: 215px;
+//         padding-right: 215px;
+//     }
+// }
 
-
-@media screen and (min-width: 1600px) {
-    .container {
-        width: 1600px;
-        padding-left: 215px;
-        padding-right: 215px;
-    }
-}
-
-@media screen and (min-width: 1920px) {
-    .container {
-        width: 1920px;
-    }
-}
+// @media screen and (min-width: 1920px) {
+//     .container {
+//         width: 1920px;
+//     }
+// }
