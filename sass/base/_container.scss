@@ -8,11 +8,15 @@
     // outline: 2px solid rgb(83, 71, 255);
 }
 
+// ========================== MOBILE ==========================
+
 @media screen and (min-width: 480px) {
     .container {
         width: 480px;
     }
 }
+
+// ========================== TABLET ==========================
 
 @media screen and (min-width: 768px) {
     .container {
@@ -20,6 +24,8 @@
 
     }
 }
+
+// ========================== DESKTOP ==========================
 
 @media screen and (min-width: 1024px) {
     .container {
@@ -35,11 +41,13 @@
     }
 }
 
+
+
 @media screen and (min-width: 1600px) {
     .container {
         width: 1600px;
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 215px;
+        padding-right: 215px;
     }
 }
 

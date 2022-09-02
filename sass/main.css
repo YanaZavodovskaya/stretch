@@ -217,8 +217,8 @@ a {
 @media screen and (min-width: 1600px) {
   .container {
     width: 1600px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 215px;
+    padding-right: 215px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -800,8 +800,14 @@ a {
 
 .gallery__picture-wrapper {
   display: flex;
+  text-align: end;
+  align-items: flex-end;
 }
 
 .gallery__picture:not(:last-child) {
   margin-right: 55px;
+}
+
+.gallery__icon {
+  fill: #000000;
 }/*# sourceMappingURL=main.css.map */
