@@ -1,139 +1,71 @@
-// .footer {
-//     background-color: var(--accent-bg-color);
-//     padding-top: 60px;
-//     padding-bottom: 60px;
-// }
+@media screen and (min-width: 320px) {
+    .footer {
+        padding-bottom: 70px;
+        position: relative;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), #FFFFFF;
+    }
 
-// .footer-contacts {
-//     margin-bottom: 60px;
-// }
+    .logo__link--footer {
+        @include font(50px, 60px, 700);
+    }
 
-// .footer-address {
-//     font-style: inherit;
+    .footer__social-link {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .footer__social-icon {
+        display: block;
+    }
+
+    .footer__address-list,
+    .footer__contacts-list {
+        @include font(12px, 15px);
+        margin-bottom: 30px;
+    }
+
+    .footer__address-item,
+    .footer__contacts-item {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .footer__address-item--color,
+    .footer__contacts-item--color {
+        color: var(--accent-text-color);
+    }
+
+    .footer__contacts-link,
+    .footer__address-link {
+        &:hover,
+        &:focus {
+            color: var(--accent-text-color);
+        }
+    }
+
+    .footer__request-btn {
+        display: block;
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+        width: 249px;
+        height: 51px;
+        padding: 18px 11px;
+        background-color: #FFDEDE;
+        @include font(12px, 15px);
+        letter-spacing: 0.06em;
+        color: #000000;
+        border: 0;
+        box-shadow: 4px 4px 4px 4px rgba(230, 57, 70, 0.5);
+        animation: slidegdz 1s forwards;
     
-
-// }
-
-// .footer-address__item:not(:last-child) {
-//     margin-bottom: 8px;
-// }
-
-// .footer-address__list {
-//     @extend %align-mobile;
-// }
-
-// .footer-address__link {
-//     font-style: inherit;
-//     @include font(14px, 24px, 400);
-//     text-decoration: none;
-//     color: rgba(255, 255, 255, 0.6);
-
-//     transition: color 250ms var(--primary-cubic-bezier);
-
-//     &:hover,
-//     &:focus {
-//         color: #ffffff;
-//     }
-// }
-
-// .footer-contact__address {
-//     color: #ffffff;
-// }
-
-// // ================= footer social section =================
-
-// .footer-social {
-//     @extend %align-mobile;
-// }
-// .footer-social__title {
-//     display: block;
-//     @include font(14px, 16.41px);
-//     letter-spacing: 0.03em;
-//     text-transform: uppercase;
-//     color: #ffffff;
-
-//     margin-bottom: 20px;
-// }
-
-// .footer-social__list {
-//     @extend %align;
-// }
-
-// .footer-social__link {
-//     @extend %align;
-//     width: 44px;
-//     height: 44px;
-//     border-radius: 50%;
-//     border: 1px solid transparent;
-//     cursor: pointer;
-//     background-color: rgba(255, 255, 255, 0.1);
-
-//     transition: background-color 250ms var(--primary-cubic-bezier);
+        transition: background-color 250ms var(--primary-cubic-bezier), color 250ms var(--primary-cubic-bezier);
     
-//         &:hover,
-//         &:focus {
-//             background-color: var(--accent-text-color);
-//         }
-// }
-
-// .footer-social__item:not(:last-child) {
-//     margin-right: 10px;
-// }
-
-// .footer-social__icon {
-//     width: 20px;
-//     height: 20px;
-//     fill: #ffffff;
-// }
-
-// @media screen and (min-width: 768px) {
-//     .footer-container {
-//         display: flex;
-//         flex-wrap: wrap;
-//         align-items: baseline;
-//         justify-content: center;
-//     }
-
-//     .footer-contacts {
-//         margin-right: 165px;
-//         margin-bottom: 0;
-//     }
-
-// }
-
-// @media screen and (min-width: 1200px) {
-    
-// .footer-container {
-//         display: flex;
-//         flex-wrap: nowrap;
-//     }
-
-// .footer-contacts {
-//     margin-bottom: 0;
-//     margin-right: 70px;
-// }
-
-// .footer-address__item:not(:last-child) {
-//     margin-bottom: 9px;
-// }
-
-// .footer-address__list {    
-//     align-items: flex-start;
-// }
-
-// .footer-social {
-//     display: block;
-//     flex-direction: row;
-//     margin-right: 93px;
-// }
-
-// .footer-social__link {
-//     transition: background-color 250ms var(--primary-cubic-bezier);
-
-//     &:hover,
-//     &:focus {
-//         background-color: var(--accent-text-color);
-//     }
-// }
-
-// }
+        &:hover,
+        &:focus {
+            background-color: var(--accent-text-color);
+            color: #ffffff;
+        }
+    }
+}
