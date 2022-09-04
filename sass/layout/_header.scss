@@ -1,32 +1,25 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.logo__link {
+    @include font(34px, 18px, 700);
+    font-family: var(--logo-font-family);
+    color: #252422;
+    display: inline-block;
 
 
-@media screen and (min-width: 768px) {
-    .header {  
-        position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-        // background-color: #A5A19F;
-        // border-bottom: 1px solid #000;
-        // position: absolute;
-    } 
+}
 
-    .header__container {
-        display: flex;
-        align-items: center;
+.logo__link--span {
+    color: var(--accent-text-color);
+}
 
-    }
-
+@media screen and (max-width: 767px) {
     .logo__link {
-        @include font(34px, 18px, 700);
-        font-family: var(--logo-font-family);
-        color: #252422;        
-        display: inline-block;
-
-
-    }
-
-    .logo__link--span {
-        color: var(--accent-text-color);
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
