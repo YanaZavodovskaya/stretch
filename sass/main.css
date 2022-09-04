@@ -795,6 +795,9 @@ a {
 .team__list-name-2 {
     display: none;
   }
+  .team__list--coach {
+    margin-top: 60px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .team-container {
@@ -855,7 +858,7 @@ a {
     display: block;
   }
   .contacts__address--max-wrapper {
-    height: 155px;
+    height: 135px;
     padding-top: 25px;
   }
   .contacts__address--min-wrapper {
@@ -982,16 +985,21 @@ a {
     display: block;
   }
 }
-.gallery__picture-wrapper {
-  display: flex;
-  text-align: end;
-  align-items: flex-end;
+@media screen and (min-width: 320px) {
+  .gallery__picture-wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
 }
-
-.gallery__picture:not(:last-child) {
-  margin-right: 55px;
-}
-
-.gallery__icon {
-  fill: #000000;
+@media screen and (min-width: 1024px) {
+  .gallery__picture-wrapper {
+    display: flex;
+    text-align: end;
+    align-items: flex-end;
+  }
+  .gallery__picture:not(:last-child) {
+    margin-right: 55px;
+  }
 }/*# sourceMappingURL=main.css.map */

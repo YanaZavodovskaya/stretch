@@ -554,7 +554,7 @@
           </div>
         </div>
       </section>
-      <!-- <section class="gallery section">
+      <section class="gallery section">
         <div class="gallery__container container">
           <h2 class="gallery__title section-title visually-hidden">галерея</h2>
           <div class="gallery__picture-wrapper">
@@ -564,16 +564,21 @@
                 media="(min-width: 1200px)"
                 type="image/webp"
               />
+              <source
+                srcset="./images/gallery/gallery-img-1.jpg 1x"
+                media="(max-width: 479px)"
+                type="image/webp"
+              />
 
               <img
                 src="./images/team/gallery/gallery-img-1.jpg"
                 alt="Фото студии"
-                max-width="400"
-                max-height="400"
+                width="290"
+                height="300"
                 class="gallery__img"
               />
             </picture>
-            <picture class="gallery__picture">
+            <!-- <picture class="gallery__picture">
               <source
                 srcset="./images/gallery/gallery-img-2.jpg 1x"
                 media="(min-width: 1200px)"
@@ -587,15 +592,10 @@
                 max-height="400"
                 class="gallery__img"
               />
-            </picture>
-            <svg class="gallery__icon" width="40" height="40">
-              <use
-                href="./images/icons/icons-sprite.svg#icon-arrow-right-mini"
-              ></use>
-            </svg>
+            </picture> -->
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
   </body>
 </html>
