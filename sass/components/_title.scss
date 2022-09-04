@@ -1,0 +1,16 @@
+@media screen and (min-width: 320px) {
+    .section-title {
+        @include font(22px, 27px, 700);
+        text-transform: uppercase;
+        color: var(--accent-text-color);
+        margin-bottom: 40px;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section-title {
+        @include font(32px, 39px, 700);
+        margin-bottom: 70px;
+    }
+}

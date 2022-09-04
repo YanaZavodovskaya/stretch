@@ -75,6 +75,47 @@
         <div class="container">
           <ul class="quolities__list list">
             <li class="quolities__item">
+              <h3 quolities__title>РАССРОЧКА</h3>
+              <ul class="quolity__list list">
+                <li class="quolity__item">
+                  KASPI
+                  <p class="quolity__item-text">0 - 0 - 24</p>
+                </li>
+                <li class="quolity__item">
+                  FREEDOM finance
+                  <p class="quolity__item-text">0 - 0 - 12</p>
+                </li>
+                <li class="quolity__item">
+                  JUSAN
+                  <p class="quolity__item-text">0 - 0 - 12</p>
+                </li>
+              </ul>
+            </li>
+
+            <li class="quolities__item">
+              <h3 quolities__title>ОНЛАЙН-ЗАПИСЬ</h3>
+              <p class="quolity__item quolity__list">
+                Записаться на тренировку можешь в приложении STRETCH!
+              </p>
+              <p class="quolity__item">
+                <a href="" class="quolity__item-link">App Store</a
+                >&nbsp;|&nbsp;<a href="" class="quolity__item-link"
+                  >Google Play</a
+                >
+              </p>
+              <!-- <ul class="quolity__list list">
+                <li class="quolity__item">
+                  Записаться на тренировку можешь в приложении mobifitnes
+                </li>
+                <li class="quolity__item">
+                  <a href="" class="quolity__item-link">App Store</a
+                  >&nbsp;|&nbsp;<a href="" class="quolity__item-link"
+                    >Google Play</a
+                  >
+                </li>
+              </ul> -->
+            </li>
+            <li class="quolities__item">
               <h3 quolities__title>ГИБКОЕ РАСПИСАНИЕ</h3>
               <ul class="quolity__list list">
                 <li class="quolity__item quolity__item-title">
@@ -85,41 +126,10 @@
                 <li class="quolity__item">18:00 - 21:00</li>
               </ul>
             </li>
-            <li class="quolities__item">
-              <h3 quolities__title>ОНЛАЙН-ЗАПИСЬ</h3>
-              <ul class="quolity__list list">
-                <li class="quolity__item">
-                  Записаться на тренировку можешь в приложении mobifitnes
-                </li>
-                <li class="quolity__item">
-                  <a href="" class="quolity__item-link">App Store</a
-                  >&nbsp;|&nbsp;<a href="" class="quolity__item-link"
-                    >Google Play</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="quolities__item">
-              <h3 quolities__title>РАССРОЧКА</h3>
-              <ul class="quolity__list list">
-                <li class="quolity__item">
-                  FREEDOM finance
-                  <p class="quolity__item-text">0 - 0 - 12</p>
-                </li>
-                <li class="quolity__item">
-                  JUSAN
-                  <p class="quolity__item-text">0 - 0 - 12</p>
-                </li>
-                <li class="quolity__item">
-                  KASPI
-                  <p class="quolity__item-text">0 - 0 - 24</p>
-                </li>
-              </ul>
-            </li>
           </ul>
         </div>
       </section>
-      <!-- <section class="about section" id="about">
+      <section class="about section" id="about">
         <div class="about__container container">
           <h2 class="section-title">О студии</h2>
           <p class="about__text">
@@ -144,19 +154,32 @@
             doloribus facere cumque ab dignissimos voluptatibus?
           </p>
         </div>
-      </section> -->
-      <!-- <section class="classes section" id="classes">
+      </section>
+      <section class="classes section" id="classes">
         <div class="classes__container container">
           <h2 class="section-title">Направления</h2>
           <div class="classes__course-container">
             <div class="classes__course-img-container">
-              <img
-                src="./images/stretching-img.png"
-                alt="STRETCHING"
-                class="classes__course-img"
-                width="500"
-                height="300"
-              />
+              <picture class="team__picture">
+                <source
+                  srcset="./images/classes/mobile-classes-img-1.jpg 1x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/classes/mobile-classes-img-1.jpg 1x"
+                  media="(max-width: 479px)"
+                  type="image/webp"
+                />
+
+                <img
+                  src="./images/classes/mobile-classes-img-1.jpg"
+                  alt="STRETCHING"
+                  class="classes__course-img"
+                  width="290"
+                  height="140"
+                />
+              </picture>
               <h3 class="classes__course-subtitle section-subtitle">
                 STRETCHING
               </h3>
@@ -188,20 +211,33 @@
               </p>
             </div>
             <div class="classes__course-img-container">
-              <img
-                src="./images/stretching-2-img.png"
-                alt="AEROSTRETCHING"
-                class="classes__course-img"
-                width="500"
-                height="300"
-              />
+              <picture class="team__picture">
+                <source
+                  srcset="./images/classes/mobile-classes-img-2.jpg 1x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/classes/mobile-classes-img-2.jpg 1x"
+                  media="(max-width: 479px)"
+                  type="image/webp"
+                />
+
+                <img
+                  src="./images/classes/mobile-classes-img-2.jpg"
+                  alt="STRETCHING"
+                  class="classes__course-img"
+                  width="290"
+                  height="140"
+                />
+              </picture>
               <h3 class="classes__course-subtitle section-subtitle">
                 AEROSTRETCHING
               </h3>
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- <section class="tariffs section" id="tariffs">
         <div class="tariffs-container container">
           <h2 class="section-title">Тарифы</h2>
