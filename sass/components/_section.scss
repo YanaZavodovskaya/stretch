@@ -8,6 +8,13 @@
 
 @media screen and (min-width: 1024px) {
     .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section {
         padding-top: 70px;
         padding-bottom: 70px;
     }

@@ -4,6 +4,13 @@
     left: 0;
     width: 100%;
 }
+
+.header__container {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+}
+
 .logo__link {
     @include font(34px, 18px, 700);
     font-family: var(--logo-font-family);
@@ -17,7 +24,7 @@
     color: var(--accent-text-color);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
     .logo__link {
         padding-top: 20px;
         padding-bottom: 20px;

@@ -7,7 +7,6 @@
 @media screen and (min-width: 480px) {
     .about {
         display: block;
-            background: linear-gradient(360deg, #F1F1F1 0%, rgba(217, 217, 217, 0) 83.11%);
         }
     
     .about__container {
@@ -16,9 +15,7 @@
         padding-right: 10px;
         padding-left: 10px;
 
-    }
-
-    
+    }    
 
     .about__text {
         @include font(16px, 20px);
@@ -31,6 +28,18 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .about__container {
+        padding-right: 50px;
+        padding-left: 50px;
+
+    }
+
+    .about__text {
+        @include font(18px, 22px);
+    }
+}
+
+@media screen and (min-width: 1200px) {
     .about__container {
         padding-right: 200px;
         padding-left: 200px;

@@ -60,15 +60,7 @@
     }
 }
 
-// @keyframes slidegdz {
-//     0% {
-//         width: 10px;
-//     }
 
-//     100% {
-//         width: 330px;
-//     }
-// }
 
 @media screen and (min-width: 320px) {
     @keyframes slidegdz {
@@ -78,6 +70,18 @@
     
             100% {
                 width: 249px;
+            }
+        }
+}
+
+@media screen and (min-width: 1024px) {
+    @keyframes slidegdz {
+            0% {
+                width: 10px;
+            }
+    
+            100% {
+                width: 330px;
             }
         }
 }

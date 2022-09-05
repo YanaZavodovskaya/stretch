@@ -136,9 +136,9 @@
 @media screen and (min-width: 1024px) {
     .hero {            
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-            url('../images/hero-img-2.jpg');    
-        padding-top: 389px;
-        padding-bottom: 489px;
+            url('../images/hero/desktop-hero-img-1024px.jpg');    
+        padding-top: 226px;
+        padding-bottom: 284px;
         }
 
     .hero__text-container {
@@ -174,7 +174,7 @@
 
     .request__btn {
         right: 5%;
-        bottom: 30%;
+        bottom: -75%;
         width: 330px;
         height: 60px;
         padding: 20px 15px;
