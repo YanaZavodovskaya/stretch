@@ -821,7 +821,7 @@ a {
   .tariffs__item {
     position: relative;
     width: 290px;
-    background-color: rgba(245, 245, 245, 0.5);
+    background-color: rgba(74, 78, 105, 0.1215686275);
     border-radius: 20px;
     padding-top: 77px;
     padding-bottom: 30px;
@@ -838,11 +838,12 @@ a {
     line-height: 1.25;
   }
   .tariff__item:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .tariff__btn {
     width: 150px;
     height: 45px;
+    letter-spacing: 0.1em;
     border-radius: 20px;
     background: #FFDEDE;
     border: 0;
@@ -855,7 +856,7 @@ a {
   }
   .tariff {
     position: absolute;
-    top: -20%;
+    top: -18%;
     left: 50%;
     transform: translateX(-50%);
     width: 100px;
@@ -880,19 +881,47 @@ a {
     margin-top: 5px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 600px) {
   .tariffs__list {
     display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+  }
+  .tariffs__item {
+    position: relative;
+    width: 300px;
+    background-color: rgba(74, 78, 105, 0.1215686275);
+    border-radius: 20px;
+    padding-top: 77px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .tariffs__item:not(:last-child) {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tariffs__list {
+    flex-wrap: nowrap;
+  }
+  .tariffs__item {
+    width: 200px;
+  }
+  .tariffs__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 5px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .tariffs__list {
     margin-top: 140px;
   }
   .tariffs__item {
-    padding-top: 115px;
-    padding-bottom: 30px;
-    padding-right: 30px;
-    padding-left: 30px;
+    width: 300px;
   }
   .tariffs__item:not(:last-child) {
-    margin-right: 75px;
+    margin-right: 60px;
   }
   .tariff__list {
     font-weight: 400;
