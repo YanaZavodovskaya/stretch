@@ -11,10 +11,11 @@
     }    
 
     .classes__course-container {
-        display: block;
+        display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
+
     }
 
     .classes__course-text-container {
@@ -37,9 +38,22 @@
 
 }
 
+@media screen and (min-width: 480px) {
+    .classes__course-img {
+        width: 450px;
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .classes__course-img {
+        width: 500px;
+        height: 300px;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .classes__course-container {
-        display: flex;
         justify-content: space-between;
         padding-left: 65px;
         padding-right: 65px;

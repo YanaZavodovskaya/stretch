@@ -3,14 +3,13 @@
         text-align: center;
     }
 
-    .tariffs-container {
-        display: block;
-        justify-content: center;
-        align-items: center;
-    }
+    // .tariffs-container {
+    //     display: block;
+    // }
 
     .tariffs__list {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         margin-top: 100px;

@@ -12,22 +12,32 @@
     
     .about__container {
         display: block;
-        justify-content: center;
-        align-items: center;
         text-align: center;
-        padding-right: 200px;
-        padding-left: 200px;
+        padding-right: 10px;
+        padding-left: 10px;
 
     }
 
     
 
     .about__text {
-        @include font(18px, 22px);
+        @include font(16px, 20px);
 
 
         &:not(:last-child) {
             margin-bottom: 20px;
         }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about__container {
+        padding-right: 200px;
+        padding-left: 200px;
+
+    }
+
+    .about__text {
+        @include font(18px, 22px);
     }
 }
