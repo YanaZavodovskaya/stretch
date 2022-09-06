@@ -593,8 +593,8 @@ a {
 @media screen and (min-width: 1920px) {
   .hero {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero/desktop-hero-img-1920px.jpg");
-    padding-top: 295px;
-    padding-bottom: 485px;
+    padding-top: 325px;
+    padding-bottom: 530px;
   }
   .request__btn {
     bottom: -120%;
@@ -805,31 +805,31 @@ a {
     line-height: 1.2222222222;
   }
 }
-@media screen and (min-width: 320px) {
-  .classes__container {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .classes__course-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .classes__course-text-container {
-    display: none;
-  }
-  .classes__course-img-container {
-    position: relative;
-  }
-  .classes__course-subtitle {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    display: block;
-    color: #ffffff;
+.classes__container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.classes__item {
+  position: relative;
+  max-width: 450px;
+}
+
+.classes__course-subtitle {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  display: block;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 479px) {
+  .classes__course-img {
+    width: 100%;
+    height: 100%;
   }
 }
 @media screen and (min-width: 480px) {
@@ -1048,19 +1048,19 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: -40px 0;
+    margin: -20px 0;
   }
   .team__item {
     position: relative;
     background-color: #F5F5F5;
     box-shadow: 0px 4px 4px 4px rgba(230, 57, 70, 0.5);
-    border-radius: 10px;
-    width: 290px;
+    max-width: 450px;
+    max-height: 450px;
     overflow: hidden;
-    margin: 40px 0;
+    margin: 20px 0;
   }
   .team__picture-name-wrapper {
-    width: 290px;
+    width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1079,24 +1079,36 @@ a {
     line-height: 1.2222222222;
   }
 }
+@media screen and (max-width: 479px) {
+  .team__img {
+    width: 100%;
+    height: 100%;
+  }
+}
 @media screen and (min-width: 768px) {
   .team__list {
-    margin: -20px;
+    margin: -30px -30px;
   }
   .team__item {
-    margin: 20px;
+    position: relative;
+    background-color: #F5F5F5;
+    box-shadow: 0px 4px 4px 4px rgba(230, 57, 70, 0.5);
+    max-width: 400px;
+    max-height: 400px;
+    overflow: hidden;
+    margin: 30px 30px;
+  }
+  .team__img {
+    width: 100%;
+    height: 100%;
   }
 }
 @media screen and (min-width: 1024px) {
   .team-container {
     position: relative;
   }
-  .team__list {
-    justify-content: start;
-  }
   .team__item {
     background-color: #F5F5F5;
-    width: 300px;
   }
 }
 @media screen and (min-width: 320px) {
