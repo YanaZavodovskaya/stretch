@@ -96,6 +96,12 @@
     .footer__social-link {
         display: block;
         margin-bottom: 0;
+
+        &:hover .footer__social-icon,
+        &:focus .footer__social-icon {
+            fill: var(--accent-text-color);
+            stroke: var(--accent-text-color);
+        }
     }
 
     .footer__social-icon {
