@@ -75,7 +75,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-    @keyframes slidegdz {
+    @keyframes slidegdz1024px {
             0% {
                 width: 10px;
             }
@@ -84,4 +84,16 @@
                 width: 330px;
             }
         }
+}
+
+@media screen and (min-width: 1600px) {
+    @keyframes slidegdz1600px {
+        0% {
+            width: 10px;
+        }
+
+        100% {
+            width: 390px;
+        }
+    }
 }
