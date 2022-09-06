@@ -113,6 +113,7 @@
 @media screen and (min-width: 768px) {
     .tariffs__list {
         flex-wrap: nowrap;
+        justify-content: space-between;
 
     }
 
@@ -121,7 +122,6 @@
 
         &:not(:last-child) {
             margin-bottom: 0;
-            margin-right: 5px;
 
         }
 
