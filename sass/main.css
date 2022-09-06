@@ -532,7 +532,7 @@ a {
   }
   .request__btn {
     right: 5%;
-    bottom: -75%;
+    bottom: -95%;
     width: 330px;
     height: 60px;
     padding: 20px 15px;
@@ -548,7 +548,7 @@ a {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero/desktop-hero-img-1200px.jpg");
   }
   .request__btn {
-    bottom: -85%;
+    bottom: -100%;
   }
 }
 @media screen and (min-width: 1366px) {
@@ -556,6 +556,9 @@ a {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero/desktop-hero-img-1366px.jpg");
     padding-top: 241px;
     padding-bottom: 372px;
+  }
+  .request__btn {
+    bottom: -120%;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -580,7 +583,7 @@ a {
     line-height: 1.225;
   }
   .request__btn {
-    bottom: -100%;
+    bottom: -130%;
     width: 390px;
     height: 70px;
     font-weight: 400;
@@ -597,7 +600,7 @@ a {
     padding-bottom: 530px;
   }
   .request__btn {
-    bottom: -120%;
+    bottom: -140%;
   }
 }
 @media screen and (min-width: 320px) {
@@ -913,7 +916,6 @@ a {
     position: relative;
     width: 290px;
     background-color: rgba(74, 78, 105, 0.1215686275);
-    border-radius: 20px;
     padding-top: 77px;
     padding-bottom: 30px;
     padding-right: 30px;
@@ -935,8 +937,8 @@ a {
     width: 150px;
     height: 45px;
     letter-spacing: 0.1em;
-    border-radius: 20px;
     background: #FFDEDE;
+    box-shadow: 4px 4px 4px 4px rgba(230, 57, 70, 0.5);
     border: 0;
     margin-top: 30px;
     transition: background-color 250ms var(--primary-cubic-bezier), color 250ms var(--primary-cubic-bezier);
@@ -982,7 +984,6 @@ a {
     position: relative;
     width: 300px;
     background-color: rgba(74, 78, 105, 0.1215686275);
-    border-radius: 20px;
     padding-top: 77px;
     padding-bottom: 15px;
     padding-right: 15px;
@@ -1048,7 +1049,7 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: -20px 0;
+    margin: -40px 0;
   }
   .team__item {
     position: relative;
@@ -1057,7 +1058,7 @@ a {
     max-width: 450px;
     max-height: 450px;
     overflow: hidden;
-    margin: 20px 0;
+    margin: 40px 0;
   }
   .team__picture-name-wrapper {
     width: 100%;
@@ -1072,6 +1073,7 @@ a {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.2222222222;
+    margin-bottom: 8px;
   }
   .team__picture-prof {
     font-weight: 400;
@@ -1090,12 +1092,8 @@ a {
     margin: -30px -30px;
   }
   .team__item {
-    position: relative;
-    background-color: #F5F5F5;
-    box-shadow: 0px 4px 4px 4px rgba(230, 57, 70, 0.5);
     max-width: 400px;
     max-height: 400px;
-    overflow: hidden;
     margin: 30px 30px;
   }
   .team__img {
@@ -1117,74 +1115,71 @@ a {
     justify-content: center;
     text-align: center;
   }
-  .contacts__wrapper-container {
-    display: block;
-    justify-content: center;
-    align-items: center;
+  .contacts__item {
+    padding: 15px;
   }
-  .contacts__wrapper {
-    display: block;
-  }
-  .contacts__address--max-wrapper {
-    height: 135px;
-    padding-top: 25px;
-  }
-  .contacts__address--min-wrapper {
-    height: 155px;
-    border-bottom: 2px solid #000000;
-  }
-  .contacts__numbers {
-    padding-top: 15px;
-  }
-  .contacts__wrapper-title {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    margin-bottom: 10px;
+  .contacts__item:not(:last-child) {
+    border-bottom: 2px solid rgb(0, 0, 0);
   }
   .contacts__icon {
     margin-bottom: 15px;
   }
-  .contacts__wrapper-item {
-    display: block;
-  }
-  .contacts__wrapper-item:not(:last-child) {
+  .contacts__item-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
     margin-bottom: 10px;
   }
-  .contacts__wrapper-link {
+  .address__item,
+.phonenum__item {
+    display: block;
+  }
+  .address__item:not(:last-child),
+.phonenum__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .address__link,
+.phonenum__link {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
   }
-  .contacts__wrapper-link:hover, .contacts__wrapper-link:focus {
+  .address__link:hover, .address__link:focus,
+.phonenum__link:hover,
+.phonenum__link:focus {
     color: var(--accent-text-color);
   }
-  .contacts__social-list {
+  .social__list {
     display: flex;
     justify-content: center;
     margin-top: 30px;
   }
-  .contacts__social-item {
+  .social__item {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: rgba(217, 217, 217, 0.5);
   }
-  .contacts__social-item:not(:last-child) {
+  .social__item:not(:last-child) {
     margin-right: 40px;
   }
-  .contacts__social-item:hover, .contacts__social-item:focus {
+  .social__item:hover, .social__item:focus {
     background-color: var(--accent-text-color);
   }
-  .contacts__social-link {
+  .social__icon {
+    fill: #000000;
+    stroke: #000000;
+  }
+  .social__link {
     display: block;
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 8px;
   }
-  .contacts__social-link:hover .contacts__social-icon, .contacts__social-link:focus .contacts__social-icon {
+  .social__link:hover .social__icon, .social__link:focus .social__icon {
     fill: #ffffff;
+    stroke: #ffffff;
   }
   .contacts__picture {
     display: none;
@@ -1257,21 +1252,22 @@ a {
   .gallery {
     background: linear-gradient(0.59deg, rgba(0, 0, 0, 0.2) 12.99%, rgba(0, 0, 0, 0) 99.6%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
   }
+  .gallery__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .gallery__picture-wrapper {
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
+    max-width: 450px;
+    max-height: 450px;
   }
-}
-@media screen and (min-width: 1024px) {
-  .gallery__picture-wrapper {
-    display: flex;
-    text-align: end;
-    align-items: flex-end;
-  }
-  .gallery__picture:not(:last-child) {
-    margin-right: 55px;
+  .gallery__img {
+    width: 100%;
+    height: 100%;
   }
 }
 @media screen and (min-width: 320px) {

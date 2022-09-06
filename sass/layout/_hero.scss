@@ -174,7 +174,7 @@
 
     .request__btn {
         right: 5%;
-        bottom: -75%;
+        bottom: -95%;
         width: 330px;
         height: 60px;
         padding: 20px 15px;
@@ -191,7 +191,7 @@
     }
 
     .request__btn {
-        bottom: -85%;
+        bottom: -100%;
 
     }
 }
@@ -204,6 +204,11 @@
         padding-top: 241px;
         padding-bottom: 372px;
     }
+
+        .request__btn {
+            bottom: -120%;
+    
+        }
 }
 
 @media screen and (min-width: 1600px) {
@@ -230,7 +235,7 @@
     }
 
     .request__btn {
-        bottom: -100%;
+        bottom: -130%;
         width: 390px;
         height: 70px;
         @include font(18px, 22px);
@@ -249,7 +254,7 @@
     }
 
     .request__btn {
-        bottom: -120%;
+        bottom: -140%;
 
     }
 }
