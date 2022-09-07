@@ -11,4 +11,7 @@
 <symbol id="icon-arrow-right-mini" viewBox="0 0 26 32"><path stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round" d="M3.542 3.2 20.368 16 3.542 28.8"/></symbol>
 <symbol id="icon-arrow-right" viewBox="0 0 24 24">
 <path d="M10.586 6.586c-0.781 0.779-0.781 2.047 0 2.828l1.586 1.586h-7.244c-1.104 0-2 0.895-2 2s0.896 2 2 2h7.244l-1.586 1.586c-0.781 0.779-0.781 2.047 0 2.828 0.391 0.391 0.902 0.586 1.414 0.586s1.023-0.195 1.414-0.586l6.414-6.414-6.414-6.414c-0.781-0.781-2.047-0.781-2.828 0z"></path>
+</symbol>
+<symbol id="icon-video-youtube" viewBox="0 0 32 32">
+<path fill="none" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter"  d="M22.027 16.014l-10.171 5.977v-11.948l10.171 5.971zM31.531 21.555v-11.108c0 0 0-5.353-5.355-5.353h-20.357c0 0-5.35 0-5.35 5.353v11.108c0 0 0 5.351 5.35 5.351h20.357c0 0 5.355 0 5.355-5.351v0z"></path>
 </symbol></defs></svg>

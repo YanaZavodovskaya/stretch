@@ -110,7 +110,7 @@
 
     .classes__desc-container {
         display: block;
-        overflow: scroll;
+        // overflow: scroll;
         // position: absolute;
         // top: 0;
         // right: -65%;
@@ -127,7 +127,7 @@
         text-align: center;
         align-items: center;
         @include font(18px, 22px, 700);
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
     .classes__desc-title--circle {
@@ -141,12 +141,12 @@
         border-radius: 50%;
         background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
         color: #ffffff;
-        margin-right: 15px;
+        margin-right: 10px;
     }
 
     .classes__desc {
         @include font(16px, 20px);
-        // margin-left: 65px;
+        // margin-left: 50px;
         margin-bottom: 15px;
     }
 

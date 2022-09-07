@@ -48,25 +48,22 @@
     }
 
     .hero__bth {
-        width: 30px;
-        height: 30px;
         margin-right: 10px;
-        border: 1px solid #D9D9D9;
-        border-radius: 50%;
-        overflow: hidden;
+        border: 0;
+        // border: 2px solid #000000;
         background-color: transparent;
 
-        transition: fill 250ms var(--primary-cubic-bezier);
+        transition: stroke 250ms var(--primary-cubic-bezier);
 
         &:hover .hero__bth-video-icon,
         &:focus .hero__bth-video-icon {
-            fill: var(--accent-text-color);
+            stroke: var(--accent-text-color);
         }
     }
 
     .hero__bth-video-icon {
-        fill: #D9D9D9;
-        stroke: none;
+        stroke: rgba(85, 85, 85, 0.5);
+        stroke-width: 1px;
 
     }
 
@@ -267,7 +264,7 @@
 
     .hero__title {
         @include font(22px, 27px);
-        margin-right: 20px;
+        margin-right: 30px;
     }
 
     .hero__title--span {
