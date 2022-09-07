@@ -94,13 +94,7 @@
     }
 
     .classes__course-subtitle {
-        position: absolute;
-        bottom: 15px;
-        left: 15px;
-        display: block;
-        color: #ffffff;
-        text-transform: uppercase;
-
+        @include font(50px, 60px, 700);
     }
 
     .classes__course-img {
@@ -163,6 +157,17 @@
         &:not(:last-child) {
                 margin-bottom: 7px;
             }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .classes__item {
+        display: flex;
+        max-width: 1490px;
+
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
     }
 }
 

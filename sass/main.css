@@ -911,12 +911,9 @@ a {
     margin-bottom: 40px;
   }
   .classes__course-subtitle {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    display: block;
-    color: #ffffff;
-    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
   }
   .classes__course-img {
     width: 680px;
@@ -962,6 +959,15 @@ a {
   }
   .classes__desc-item:not(:last-child) {
     margin-bottom: 7px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .classes__item {
+    display: flex;
+    max-width: 1490px;
+  }
+  .classes__item:not(:last-child) {
+    margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 320px) {
@@ -1169,6 +1175,20 @@ a {
     max-width: 300px;
     max-height: 300px;
     margin: 30px 30px;
+  }
+  .team__img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    margin: -20px -30px;
+  }
+  .team__item {
+    max-width: 450px;
+    max-height: 450px;
+    margin: 20px 30px;
   }
   .team__img {
     width: 100%;
