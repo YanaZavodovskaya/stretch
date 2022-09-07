@@ -247,16 +247,14 @@ a {
     padding-right: 40px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .container {
-    width: 1024px;
+    width: 1200px;
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
     width: 1280px;
-    padding-left: 180px;
-    padding-right: 180px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -869,6 +867,9 @@ a {
     color: #ffffff;
     text-transform: uppercase;
   }
+  .classes__desc-container {
+    display: none;
+  }
 }
 @media screen and (max-width: 479px) {
   .classes__course-img {
@@ -898,8 +899,70 @@ a {
   }
 }
 @media screen and (min-width: 1200px) {
+  .classes {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(230, 57, 70, 0.5) 0%, rgba(230, 57, 70, 0) 100%);
+  }
   .classes__list {
+    display: block;
     flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .classes__course-subtitle {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    display: block;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .classes__desc-container {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -60%;
+    padding: 0 15px;
+    text-align: start;
+  }
+  .classes__desc-title {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2222222222;
+    margin-bottom: 15px;
+  }
+  .classes__desc-title--circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--logo-font-family);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2142857143;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    color: #ffffff;
+    margin-right: 15px;
+  }
+  .classes__desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    margin-left: 65px;
+    margin-bottom: 15px;
+  }
+  .classes__desc-time {
+    margin-left: 65px;
+    margin-bottom: 10px;
+  }
+  .classes__desc-list {
+    margin-left: 65px;
+  }
+  .classes__desc-item:not(:last-child) {
+    margin-bottom: 5px;
   }
 }
 @media screen and (min-width: 320px) {
@@ -1200,36 +1263,23 @@ a {
     border-right: 2px solid rgb(0, 0, 0);
   }
 }
-@media screen and (min-width: 1024px) {
-  .contacts__wrapper-container {
-    display: flex;
-  }
+@media screen and (min-width: 1200px) {
   .contacts__wrapper {
     display: flex;
-    flex-wrap: wrap;
-    width: 560px;
   }
-  .contacts__address--max-wrapper {
+  .contacts__item--max {
     width: 560px;
     height: 250px;
-    padding-top: 30px;
   }
-  .contacts__address--min-wrapper {
+  .contacts__item--min {
     width: 280px;
     height: 250px;
-  }
-  .contacts__numbers {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  .contacts__address--min-wrapper-left {
-    border-right: 2px solid #000000;
   }
   .contacts__icon {
     width: 70px;
     height: 70px;
   }
-  .contacts__wrapper-title {
+  .contacts__item-title {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.2222222222;
@@ -1237,25 +1287,20 @@ a {
   .contacts__icon {
     margin-bottom: 10px;
   }
-  .contacts__wrapper-link {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.2222222222;
+  .social__list {
+    padding-top: 45px;
   }
-  .contacts__social-list {
-    margin-top: 45px;
-  }
-  .contacts__social-item {
+  .social__item {
     width: 70px;
     height: 70px;
   }
-  .contacts__social-item:not(:last-child) {
+  .social__item:not(:last-child) {
     margin-right: 114px;
   }
-  .contacts__social-link {
+  .social__link {
     padding: 15px;
   }
-  .contacts__social-icon {
+  .social__icon {
     width: 40px;
     height: 40px;
   }
@@ -1394,6 +1439,24 @@ a {
   .footer__request-btn {
     right: 5%;
     bottom: 5%;
+    width: 330px;
+    height: 60px;
+    padding: 20px 13px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    -webkit-animation: slidegdz1024px 1s forwards;
+            animation: slidegdz1024px 1s forwards;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .footer__request-btn {
+    right: 5%;
+    bottom: 35%;
     width: 330px;
     height: 60px;
     padding: 20px 13px;

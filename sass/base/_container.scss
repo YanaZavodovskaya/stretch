@@ -34,9 +34,9 @@
 
 // ========================== DESKTOP ==========================
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
     .container {
-        width: 1024px;
+        width: 1200px;
         
     }
 }
@@ -44,8 +44,6 @@
 @media screen and (min-width: 1280px) {
     .container {
         width: 1280px;
-        padding-left: 180px;
-        padding-right: 180px;
     }
 }
 

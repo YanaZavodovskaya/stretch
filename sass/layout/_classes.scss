@@ -29,6 +29,10 @@
         text-transform: uppercase;
 
     }
+
+    .classes__desc-container {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 479px) {
@@ -64,41 +68,97 @@
         width: 100%;
         height: 100%;
     }
+
+        
 }
 
 
 @media screen and (min-width: 1200px) {
+    .classes {
+        background: radial-gradient(50% 50% at 50% 50%, rgba(230, 57, 70, 0.5) 0%, rgba(230, 57, 70, 0) 100%);
+    }
+
     .classes__list {
+        display: block;
         flex-wrap: wrap;
+        justify-content: flex-start;
 
     }
 
-    // .classes__course-container {
-    //     padding-left: 65px;
-    //     padding-right: 65px;
-
+    // .classes__item {
     //     &:not(:last-child) {
-    //         margin-bottom: 70px;
-    //     }
-
+    //             margin-bottom: 170px;
+    //         }
     // }
 
-    // .classes__course-text-container {
-    //     width: 500px;
+    .classes__course-subtitle {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        display: block;
+        color: #ffffff;
+        text-transform: uppercase;
+
+    }
+
+    // .classes__course-img {
+    //     width: 560px;
+    //     height: 330px;
     // }
 
-    // .section-subtitle {
-    //     @include font(24px, 29px, 700);
-    //     color: #ffffff;
-    //     display: block;
+    .classes__desc-container {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: -60%;
+        // width: 480px;
+        // height: 450px;
+        padding: 0 15px;
+        text-align: start;
+    }
 
-    // }
+    .classes__desc-title {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        @include font(18px, 22px, 700);
+        margin-bottom: 15px;
+    }
 
-    // .classes__course-subtitle {
-    //     bottom: 15px;
-    //     left: 15px;
+    .classes__desc-title--circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--logo-font-family);
+        @include font(28px, 34px, 700);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+        color: #ffffff;
+        margin-right: 15px;
+    }
 
-    // }
+    .classes__desc {
+        @include font(16px, 20px);
+        margin-left: 65px;
+        margin-bottom: 15px;
+    }
+
+    .classes__desc-time {
+        margin-left: 65px;
+        margin-bottom: 10px;
+    }
+
+    .classes__desc-list {
+        margin-left: 65px;
+    }
+
+    .classes__desc-item {
+        &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+    }
 }
 
 
