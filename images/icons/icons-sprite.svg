@@ -14,4 +14,5 @@
 </symbol>
 <symbol id="icon-video-youtube" viewBox="0 0 32 32">
 <path fill="none" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter"  d="M22.027 16.014l-10.171 5.977v-11.948l10.171 5.971zM31.531 21.555v-11.108c0 0 0-5.353-5.355-5.353h-20.357c0 0-5.35 0-5.35 5.353v11.108c0 0 0 5.351 5.35 5.351h20.357c0 0 5.355 0 5.355-5.351v0z"></path>
-</symbol></defs></svg>
+</symbol>
+<symbol id="icon-burger" viewBox="0 0 46 32"><path fill="none" stroke="#d41443" stroke-width="2.286" style="stroke:var(--color2, #d41443)" d="M0 2.286h45.714M0 16h45.714M0 29.714h45.714"/></symbol></defs></svg>
