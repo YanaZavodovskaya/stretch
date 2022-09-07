@@ -24,6 +24,13 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
-    
+@media screen and (min-width: 1200px) {
+    .gallery__picture-wrapper {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            max-width: 900px;
+            max-height: 500px;
+        }
 }
